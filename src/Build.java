@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Build {
+public class Build implements Comparable <Build> {
 
 
     private String type;
@@ -27,4 +27,17 @@ public class Build {
         return Objects.hash(numberOfStoreys, window);
     }
 
+    @Override
+    public String toString() {
+        return "Build{" +
+                "type='" + type + '\'' +
+                ", numberOfStoreys=" + numberOfStoreys +
+                ", window=" + window +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Build o) {
+        return numberOfStoreys - o.numberOfStoreys;
+    }
 }

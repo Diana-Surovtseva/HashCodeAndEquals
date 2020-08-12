@@ -7,5 +7,11 @@ public class Window {
         this.className = className;
         this.price = price;
     }
-
+    @Override
+    public String toString() {
+        return "Window{" +
+                "className='" + className + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
