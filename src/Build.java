@@ -19,12 +19,13 @@ public class Build implements Comparable <Build> {
         if (o == null || getClass() != o.getClass()) return false;
         Build build = (Build) o;
         return numberOfStoreys == build.numberOfStoreys &&
-                window == build.window;
+                Objects.equals(type, build.type) &&
+                Objects.equals(window, build.window);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(numberOfStoreys, window);
+        return Objects.hash(type, numberOfStoreys, window);
     }
 
     @Override
