@@ -4,13 +4,19 @@ public class Build implements Comparable <Build> {
 
 
     private String type;
+    private int year;
     private int numberOfStoreys;
     private Window window;
 
-    public Build(String type, int numberOfStoreys, Window window) {
+    public Build(String type, int numberOfStoreys,int year, Window window) {
         this.type = type;
+        this.year = year;
         this.numberOfStoreys = numberOfStoreys;
         this.window = window;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     @Override
@@ -32,6 +38,7 @@ public class Build implements Comparable <Build> {
     public String toString() {
         return "Build{" +
                 "type='" + type + '\'' +
+                ", year=" + year +
                 ", numberOfStoreys=" + numberOfStoreys +
                 ", window=" + window +
                 '}';

@@ -6,9 +6,9 @@ public class Main {
         Window window1 = new Window("standart", 3000, 5, 7);
         Window window2 = new Window("standart", 4000, 7, 5);
 
-        Build house1 = new Build("skyscraper", 50, window1);
-        Build house2 = new Build("skyscraper", 22, window2);
-        Build house3 = new Build("skyscraper", 30, window1);
+        Build house1 = new Build("skyscraper", 50,2006, window1);
+        Build house2 = new Build("skyscraper", 22,2019, window2);
+        Build house3 = new Build("skyscraper", 30,2001, window1);
 
 //        System.out.println("window1.hashCode() = " + window1.hashCode());
 //        System.out.println("window2.hashCode() = " + window2.hashCode());
