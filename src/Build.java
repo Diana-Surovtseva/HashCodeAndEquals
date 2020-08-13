@@ -1,14 +1,13 @@
 import java.util.Objects;
 
-public class Build implements Comparable <Build> {
-
+public class Build implements Comparable<Build> {
 
     private String type;
     private int year;
     private int numberOfStoreys;
     private Window window;
 
-    public Build(String type, int numberOfStoreys,int year, Window window) {
+    public Build(String type, int numberOfStoreys, int year, Window window) {
         this.type = type;
         this.year = year;
         this.numberOfStoreys = numberOfStoreys;
